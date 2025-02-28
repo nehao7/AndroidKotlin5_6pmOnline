@@ -3,6 +3,7 @@ package com.o7solutions.androidkotlin5_6pmonline
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     var button:Button?=null
+    var editText:EditText?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,12 +22,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         button=findViewById(R.id.btnClick)
+        editText=findViewById(R.id.etInput)
         button?.setOnClickListener {
+            if (editText?.text.toString().isNullOrEmpty()){
+                Toast.makeText(this,"Enter value first",Toast.LENGTH_SHORT).show()
+            }else{
+                var value=editText?.text.toString()
             var intent=Intent(this,RelativeActivity::class.java)
+                .putExtra("data",value)
             startActivity(intent)
-            Toast.makeText(this,"My button is clicked",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,value,Toast.LENGTH_SHORT).show()}
+
         }
 
     }
