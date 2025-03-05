@@ -51,5 +51,11 @@
         android:layout_height="wrap_content"
         android:text="@string/click"
         />
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog Activity"
+        />
 
 </LinearLayout>
