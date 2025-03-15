@@ -41,5 +41,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnAlertDialog.setOnClickListener {
             startActivity(Intent(this,AlertDialogActivity::class.java))
         }
+        binding.btnImplicit.setOnClickListener {
+            startActivity(Intent(this,ImplicitActivity::class.java))
+        }
     }
 }
