@@ -32,7 +32,7 @@ class ImplicitActivity : AppCompatActivity() {
             var intent=Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:7529073222"))
             startActivity(intent)
         }
-        
+
         //Email , SMS Task
     }
 }

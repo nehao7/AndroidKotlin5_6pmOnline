@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityMainBinding
+import com.o7solutions.androidkotlin5_6pmonline.jetpacknav.NavControllerActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -43,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnImplicit.setOnClickListener {
             startActivity(Intent(this,ImplicitActivity::class.java))
+        }
+        binding.btnJetPack.setOnClickListener {
+            startActivity(Intent(this,NavControllerActivity::class.java))
         }
     }
 }

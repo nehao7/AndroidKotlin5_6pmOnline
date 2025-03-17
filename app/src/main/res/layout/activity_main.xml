@@ -13,55 +13,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
+        android:text="Hello World!"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="italic|bold"
-        android:text="Hello World!"
-       />
+        android:textStyle="italic|bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
+        android:text="Hello World!"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="italic|bold"
-        android:text="Hello World!"
-       />
+        android:textStyle="italic|bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="italic|bold"
         android:text="@string/hello"
-       />
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
 
     <EditText
         android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
         android:layout_marginHorizontal="10dp"
-        android:hint="Enter a value"
-        />
+        android:layout_marginVertical="20dp"
+        android:hint="Enter a value" />
+
     <Button
         android:id="@+id/btnClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/click"
-        />
+        android:text="@string/click" />
+
     <Button
         android:id="@+id/btnAlertDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AlertDialog Activity"
-        />
- <Button
+        android:text="AlertDialog Activity" />
+
+    <Button
         android:id="@+id/btnImplicit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Implicit Activity"
-        />
+        android:text="Implicit Activity" />
+
+  <Button
+        android:id="@+id/btnJetPack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JetPack Activity" />
 
 </LinearLayout>

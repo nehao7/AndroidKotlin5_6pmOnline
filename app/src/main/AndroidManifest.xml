@@ -16,6 +16,9 @@
             android:name=".ImplicitActivity"
             android:exported="false" />
         <activity
+            android:name=".jetpacknav.NavControllerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ConstraintLayoutActivity"
             android:exported="false" />
         <activity
