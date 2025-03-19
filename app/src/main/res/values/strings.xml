@@ -5,4 +5,11 @@
     <string name="relative">Relative Activity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="spinner_list">
+        <item name="select item">Select Gender</item>
+        <item name="male">Male</item>
+        <item name="female">Female</item>
+        <item name="other">Other</item>
+    </string-array>
 </resources>

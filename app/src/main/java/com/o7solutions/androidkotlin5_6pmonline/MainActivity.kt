@@ -48,5 +48,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnJetPack.setOnClickListener {
             startActivity(Intent(this,NavControllerActivity::class.java))
         }
+        binding.btnSpinner.setOnClickListener {
+            startActivity(Intent(this,SpinnerActivity::class.java))
+        }
     }
 }
