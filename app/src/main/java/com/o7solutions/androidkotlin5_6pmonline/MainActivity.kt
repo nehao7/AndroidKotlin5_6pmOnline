@@ -51,5 +51,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnSpinner.setOnClickListener {
             startActivity(Intent(this,SpinnerActivity::class.java))
         }
+        binding.btnList.setOnClickListener {
+            startActivity(Intent(this,ListViewActivity::class.java))
+        }
     }
 }
