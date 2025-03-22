@@ -2,6 +2,8 @@ package com.o7solutions.androidkotlin5_6pmonline
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -16,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var button:Button?=null
     var editText:EditText?=null
+    lateinit var myMenu:Unit
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.title="Home Screen"
         button=findViewById(R.id.btnClick)
         editText=findViewById(R.id.etInput)
         button?.setOnClickListener {
@@ -54,5 +58,39 @@ class MainActivity : AppCompatActivity() {
         binding.btnList.setOnClickListener {
             startActivity(Intent(this,ListViewActivity::class.java))
         }
+        binding.btnList.setOnClickListener {
+            startActivity(Intent(this,ListViewActivity::class.java))
+        }
+        binding.btnWebView.setOnClickListener {
+            startActivity(Intent(this,WebViewActivity::class.java))
+        }
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        return super.onCreateOptionsMenu(menu)
+        myMenu=menuInflater.inflate(R.menu.my_menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+
+            R.id.mnProfile->{
+                startActivity(Intent(this,ProfileActivity::class.java))
+                return true
+            }
+            R.id.mnSetting->{
+
+                return true
+            }
+
+            else-> super.onOptionsItemSelected(item)
+        }
+
+
+
+
+
     }
 }

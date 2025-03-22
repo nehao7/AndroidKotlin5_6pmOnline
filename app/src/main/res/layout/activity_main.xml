@@ -67,15 +67,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="JetPack Activity" />
+
     <Button
         android:id="@+id/btnSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Spinner Activity" />
- <Button
+
+    <Button
         android:id="@+id/btnList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="List Activity" />
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView Activity" />
+
 
 </LinearLayout>
