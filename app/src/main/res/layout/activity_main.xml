@@ -86,5 +86,11 @@
         android:layout_height="wrap_content"
         android:text="WebView Activity" />
 
+   <Button
+        android:id="@+id/btnListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView Activity" />
+
 
 </LinearLayout>

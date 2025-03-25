@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityMainBinding
 import com.o7solutions.androidkotlin5_6pmonline.jetpacknav.NavControllerActivity
+import com.o7solutions.androidkotlin5_6pmonline.listpackage.ListBaseAdapterActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -63,6 +64,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnWebView.setOnClickListener {
             startActivity(Intent(this,WebViewActivity::class.java))
+        }
+        binding.btnWebView.setOnClickListener {
+            startActivity(Intent(this,ListBaseAdapterActivity::class.java))
         }
 
     }
