@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnWebView.setOnClickListener {
             startActivity(Intent(this,WebViewActivity::class.java))
         }
-        binding.btnWebView.setOnClickListener {
+        binding.btnListView.setOnClickListener {
             startActivity(Intent(this,ListBaseAdapterActivity::class.java))
         }
 

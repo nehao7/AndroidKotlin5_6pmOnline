@@ -7,7 +7,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.o7solutions.androidkotlin5_6pmonline.R
 
-class ListBaseAdapter(var arrayList: ArrayList<Student>):BaseAdapter() {
+class ListBaseAdapter(var arrayList: ArrayList<Student>) : BaseAdapter() {
     override fun getCount(): Int {
         return arrayList.size
     }
@@ -21,9 +21,14 @@ class ListBaseAdapter(var arrayList: ArrayList<Student>):BaseAdapter() {
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var view=LayoutInflater.from(parent?.context).inflate(R.layout.list_item,parent,false)
+        var view = LayoutInflater.from(parent?.context).inflate(R.layout.list_item, parent, false)
 
-        var name=view.findViewById<TextView>(R.id.tvName)
+        var name = view.findViewById<TextView>(R.id.tvName)
+        name.setText(arrayList[position].name)
+        var rollno = view.findViewById<TextView>(R.id.tvrollno)
+        rollno.setText(arrayList[position].rollNo)
+        var subject = view.findViewById<TextView>(R.id.tvsubject)
+        subject.setText(arrayList[position].subject)
         return view
     }
 }

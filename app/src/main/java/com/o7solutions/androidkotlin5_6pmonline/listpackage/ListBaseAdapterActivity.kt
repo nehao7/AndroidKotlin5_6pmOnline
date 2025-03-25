@@ -23,6 +23,9 @@ class ListBaseAdapterActivity : AppCompatActivity() {
             insets
         }
         array.add(Student("Test Name","20","KOTLIN"))
+        array.add(Student("Name1","22","C"))
+        array.add(Student("New","12","C++"))
+        array.add(Student("name45","6","Java"))
         listBaseAdapter=ListBaseAdapter(array)
         binding.listView.adapter=listBaseAdapter
         listBaseAdapter.notifyDataSetChanged()
