@@ -27,6 +27,9 @@
             android:name=".WebViewActivity"
             android:exported="false" />
         <activity
+            android:name=".fragment_activity_interaction.BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity
