@@ -24,6 +24,9 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".SharedPrefActivity"
+            android:exported="false" />
+        <activity
             android:name=".WebViewActivity"
             android:exported="false" />
         <activity

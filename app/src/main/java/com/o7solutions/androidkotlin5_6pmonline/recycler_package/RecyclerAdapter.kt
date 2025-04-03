@@ -3,16 +3,19 @@ package com.o7solutions.androidkotlin5_6pmonline.recycler_package
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.o7solutions.androidkotlin5_6pmonline.R
 import com.o7solutions.androidkotlin5_6pmonline.listpackage.Student
 
-class RecyclerAdapter(var arrayList: ArrayList<Student>):RecyclerView.Adapter<RecyclerAdapter.Viewholder>() {
+class RecyclerAdapter(var arrayList: ArrayList<Student>,var clickInterface: RecyclerAdapter.OnClick):RecyclerView.Adapter<RecyclerAdapter.Viewholder>() {
     class Viewholder (var view: View):RecyclerView.ViewHolder(view){
         var name=view.findViewById<TextView>(R.id.tvName)
         var rollno=view.findViewById<TextView>(R.id.tvrollno)
         var subject=view.findViewById<TextView>(R.id.tvsubject)
+        var update=view.findViewById<Button>(R.id.btnUpdate)
+        var delete=view.findViewById<Button>(R.id.btnDelete)
     }
 
 
@@ -33,6 +36,17 @@ class RecyclerAdapter(var arrayList: ArrayList<Student>):RecyclerView.Adapter<Re
             name.setText(arrayList[position].name)
             rollno.setText(arrayList[position].rollNo)
             subject.setText(arrayList[position].subject)
+            update.setOnClickListener {
+                clickInterface.update(position)
+            }
+            delete.setOnClickListener {
+                clickInterface.delete(position)
+            }
         }
+    }
+
+    interface OnClick{
+        fun update(position: Int)
+        fun delete(position: Int)
     }
 }

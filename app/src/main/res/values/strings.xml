@@ -5,7 +5,9 @@
     <string name="relative">Relative Activity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="change_app_color_mode">Change App Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
     <string-array name="spinner_list">
         <item name="select item">Select Gender</item>
         <item name="male">Male</item>
