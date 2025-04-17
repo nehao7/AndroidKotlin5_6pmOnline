@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityMainBinding
+import com.o7solutions.androidkotlin5_6pmonline.firebase.RegisterActivity
 import com.o7solutions.androidkotlin5_6pmonline.fragment_activity_interaction.BaseActivity
 import com.o7solutions.androidkotlin5_6pmonline.jetpacknav.NavControllerActivity
 import com.o7solutions.androidkotlin5_6pmonline.listpackage.ListBaseAdapterActivity
@@ -76,6 +77,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnInteraction.setOnClickListener {
             startActivity(Intent(this, BaseActivity::class.java))
+        }
+        binding.btnFirebaseReg.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
     }

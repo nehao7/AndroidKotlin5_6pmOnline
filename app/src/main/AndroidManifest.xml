@@ -18,6 +18,9 @@
             android:name=".recycler_package.RecyclerActivity"
             android:exported="false" />
         <activity
+            android:name=".firebase.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".listpackage.ListBaseAdapterActivity"
             android:exported="false" />
         <activity
