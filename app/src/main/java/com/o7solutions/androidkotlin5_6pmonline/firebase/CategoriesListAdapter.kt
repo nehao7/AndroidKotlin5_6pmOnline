@@ -1,10 +1,10 @@
-package com.o7services.androidkotlin2to4pm.firebase
+package com.o7solutions.androidkotlin5_6pmonline.firebase
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.o7services.androidkotlin_9_11am.databinding.CategoryListItemBinding
+import com.o7solutions.androidkotlin5_6pmonline.databinding.CategoryListItemBinding
 import kotlin.apply
 
 

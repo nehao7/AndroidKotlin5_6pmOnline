@@ -17,10 +17,8 @@ import com.google.firebase.Firebase
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.google.firebase.firestore.firestore
-import com.o7services.androidkotlin2to4pm.firebase.CategoriesListAdapter
-import com.o7services.androidkotlin2to4pm.firebase.CategoriesListModel
-import com.o7services.androidkotlin_9_11am.R
-import com.o7services.androidkotlin_9_11am.databinding.ActivityFirestoreBinding
+import com.o7solutions.androidkotlin5_6pmonline.R
+import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityFirestoreBinding
 import kotlin.collections.indexOfFirst
 import kotlin.jvm.java
 import kotlin.let

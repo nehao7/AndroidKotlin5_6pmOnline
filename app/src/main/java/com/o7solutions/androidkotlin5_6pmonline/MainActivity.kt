@@ -12,10 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityMainBinding
+import com.o7solutions.androidkotlin5_6pmonline.firebase.FirestoreActivity
 import com.o7solutions.androidkotlin5_6pmonline.firebase.RegisterActivity
 import com.o7solutions.androidkotlin5_6pmonline.fragment_activity_interaction.BaseActivity
 import com.o7solutions.androidkotlin5_6pmonline.jetpacknav.NavControllerActivity
 import com.o7solutions.androidkotlin5_6pmonline.listpackage.ListBaseAdapterActivity
+import com.o7solutions.androidkotlin5_6pmonline.realtimedatabase.RealtimeActivity
 import com.o7solutions.androidkotlin5_6pmonline.recycler_package.RecyclerActivity
 
 class MainActivity : AppCompatActivity() {
@@ -80,6 +82,12 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnFirebaseReg.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
+        }
+        binding.btnRealtimeDatabase.setOnClickListener {
+            startActivity(Intent(this, RealtimeActivity::class.java))
+        }
+        binding.btnFirestoreDatabase.setOnClickListener {
+            startActivity(Intent(this, FirestoreActivity::class.java))
         }
 
     }

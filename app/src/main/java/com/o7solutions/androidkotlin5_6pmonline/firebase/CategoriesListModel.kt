@@ -1,4 +1,4 @@
-package com.o7services.androidkotlin2to4pm.firebase
+package com.o7solutions.androidkotlin5_6pmonline.firebase
 
 data class CategoriesListModel(
     var categoryId:String?=null,

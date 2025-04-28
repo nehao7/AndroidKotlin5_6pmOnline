@@ -15,6 +15,12 @@
         android:theme="@style/Theme.AndroidKotlin5_6pmOnline"
         tools:targetApi="31">
         <activity
+            android:name=".firebase.FirestoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".realtimedatabase.RealtimeActivity"
+            android:exported="false" />
+        <activity
             android:name=".recycler_package.RecyclerActivity"
             android:exported="false" />
         <activity

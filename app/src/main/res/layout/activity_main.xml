@@ -110,6 +110,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="FirebaseReg Activity" />
+    <Button
+        android:id="@+id/btnRealtimeDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RaltimeDatabase Activity" />
+    <Button
+        android:id="@+id/btnFirestoreDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FirestoreDatabase Activity" />
 
 </LinearLayout>
 </ScrollView>
