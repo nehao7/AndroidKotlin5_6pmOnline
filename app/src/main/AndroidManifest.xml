@@ -18,6 +18,9 @@
             android:name=".firebase.FirestoreActivity"
             android:exported="false" />
         <activity
+            android:name=".sensor.SensorActivity"
+            android:exported="false" />
+        <activity
             android:name=".realtimedatabase.RealtimeActivity"
             android:exported="false" />
         <activity
