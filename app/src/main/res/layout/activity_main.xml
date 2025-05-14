@@ -121,5 +121,11 @@
         android:layout_height="wrap_content"
         android:text="FirestoreDatabase Activity" />
 
+    <Button
+        android:id="@+id/btnLocationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location Activity" />
+
 </LinearLayout>
 </ScrollView>
