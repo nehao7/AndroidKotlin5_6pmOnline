@@ -61,4 +61,8 @@ dependencies {
 //    fused location client
     implementation("com.google.android.gms:play-services-location:21.3.0")
 
+    //Exo Player
+    implementation ("androidx.media3:media3-exoplayer:1.3.1")
+    implementation ("androidx.media3:media3-exoplayer-dash:1.3.1")
+    implementation ("androidx.media3:media3-ui:1.3.1")
 }
