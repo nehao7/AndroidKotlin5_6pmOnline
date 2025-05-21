@@ -65,4 +65,13 @@ dependencies {
     implementation ("androidx.media3:media3-exoplayer:1.3.1")
     implementation ("androidx.media3:media3-exoplayer-dash:1.3.1")
     implementation ("androidx.media3:media3-ui:1.3.1")
+
+    //supabase storage
+    implementation(platform("io.github.jan-tennert.supabase:bom:3.0.2"))
+    implementation ("io.github.jan-tennert.supabase:storage-kt:3.0.2")
+
+    //glide
+    implementation ("com.github.bumptech.glide:glide:4.11.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
+
 }
