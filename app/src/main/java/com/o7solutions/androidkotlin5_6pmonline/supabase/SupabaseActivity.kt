@@ -24,7 +24,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
-import com.o7services.androidkotlin2to4pm.R
+import com.o7solutions.androidkotlin5_6pmonline.R
 import io.github.jan.supabase.SupabaseClient
 import io.github.jan.supabase.storage.UploadStatus
 import io.github.jan.supabase.storage.storage

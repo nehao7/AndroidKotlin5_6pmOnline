@@ -18,6 +18,7 @@ import com.o7solutions.androidkotlin5_6pmonline.fragment_activity_interaction.Ba
 import com.o7solutions.androidkotlin5_6pmonline.jetpacknav.NavControllerActivity
 import com.o7solutions.androidkotlin5_6pmonline.listpackage.ListBaseAdapterActivity
 import com.o7solutions.androidkotlin5_6pmonline.location.LocationActivity
+import com.o7solutions.androidkotlin5_6pmonline.maps_implementation.MapsActivity
 import com.o7solutions.androidkotlin5_6pmonline.realtimedatabase.RealtimeActivity
 import com.o7solutions.androidkotlin5_6pmonline.recycler_package.RecyclerActivity
 
@@ -93,6 +94,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnLocationActivity.setOnClickListener {
             startActivity(Intent(this, LocationActivity::class.java))
+        }
+        binding.btnMapsActivity.setOnClickListener {
+            startActivity(Intent(this, MapsActivity::class.java))
         }
 
     }

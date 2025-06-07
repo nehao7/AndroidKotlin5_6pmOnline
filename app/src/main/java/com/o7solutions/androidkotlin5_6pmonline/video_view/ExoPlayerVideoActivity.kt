@@ -6,7 +6,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.media3.common.MediaItem
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.ui.PlayerView
 import com.o7solutions.androidkotlin5_6pmonline.R
+import com.o7solutions.androidkotlin5_6pmonline.databinding.ActivityExoPlayerVideoBinding
 
 class ExoPlayerVideoActivity : AppCompatActivity() {
     private val binding: ActivityExoPlayerVideoBinding by lazy {

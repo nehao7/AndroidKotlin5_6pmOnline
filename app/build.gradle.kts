@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -28,6 +30,16 @@ android {
             )
         }
     }
+    val localProperties = Properties().apply {
+        val file = rootProject.file("local.properties")
+        if (file.exists()) {
+            file.inputStream().use { load(it) }
+        }
+    }
+    defaultConfig {
+        val googleMapsKey = localProperties.getProperty("MY_SECRET_KEY") ?: "DUMMY_KEY"
+        manifestPlaceholders["MY_SECRET_KEY"] = googleMapsKey
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -36,6 +48,8 @@ android {
         jvmTarget = "11"
     }
     buildFeatures.viewBinding=true
+    buildFeatures.dataBinding=true
+    buildFeatures.buildConfig=true
 }
 
 dependencies {
@@ -73,5 +87,9 @@ dependencies {
     //glide
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
+
+    //google maps
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:18.1.0")
 
 }
