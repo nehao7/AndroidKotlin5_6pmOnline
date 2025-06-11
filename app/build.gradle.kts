@@ -71,6 +71,8 @@ dependencies {
 //    kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
 
+    //razorpay
+    implementation ("com.razorpay:checkout:1.6.39")
 
 //    fused location client
     implementation("com.google.android.gms:play-services-location:21.3.0")
