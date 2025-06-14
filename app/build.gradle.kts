@@ -73,6 +73,11 @@ dependencies {
 
     //razorpay
     implementation ("com.razorpay:checkout:1.6.39")
+    //retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
 
 //    fused location client
     implementation("com.google.android.gms:play-services-location:21.3.0")
